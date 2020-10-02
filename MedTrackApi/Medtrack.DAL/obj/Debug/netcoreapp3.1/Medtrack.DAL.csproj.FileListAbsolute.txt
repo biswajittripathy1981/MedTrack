@@ -1,0 +1,9 @@
+D:\work\sapient\MedTrackApi\Medtrack.DAL\bin\Debug\netcoreapp3.1\Medtrack.DAL.deps.json
+D:\work\sapient\MedTrackApi\Medtrack.DAL\bin\Debug\netcoreapp3.1\Medtrack.DAL.dll
+D:\work\sapient\MedTrackApi\Medtrack.DAL\bin\Debug\netcoreapp3.1\Medtrack.DAL.pdb
+D:\work\sapient\MedTrackApi\Medtrack.DAL\obj\Debug\netcoreapp3.1\Medtrack.DAL.csprojAssemblyReference.cache
+D:\work\sapient\MedTrackApi\Medtrack.DAL\obj\Debug\netcoreapp3.1\Medtrack.DAL.AssemblyInfoInputs.cache
+D:\work\sapient\MedTrackApi\Medtrack.DAL\obj\Debug\netcoreapp3.1\Medtrack.DAL.AssemblyInfo.cs
+D:\work\sapient\MedTrackApi\Medtrack.DAL\obj\Debug\netcoreapp3.1\Medtrack.DAL.dll
+D:\work\sapient\MedTrackApi\Medtrack.DAL\obj\Debug\netcoreapp3.1\Medtrack.DAL.pdb
+D:\work\sapient\MedTrackApi\Medtrack.DAL\obj\Debug\netcoreapp3.1\Medtrack.DAL.csproj.CoreCompileInputs.cache

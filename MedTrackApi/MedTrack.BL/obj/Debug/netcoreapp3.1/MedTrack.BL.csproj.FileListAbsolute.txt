@@ -1,0 +1,12 @@
+D:\work\sapient\MedTrackApi\MedTrack.BL\bin\Debug\netcoreapp3.1\MedTrack.BL.deps.json
+D:\work\sapient\MedTrackApi\MedTrack.BL\bin\Debug\netcoreapp3.1\MedTrack.BL.dll
+D:\work\sapient\MedTrackApi\MedTrack.BL\bin\Debug\netcoreapp3.1\MedTrack.BL.pdb
+D:\work\sapient\MedTrackApi\MedTrack.BL\obj\Debug\netcoreapp3.1\MedTrack.BL.csprojAssemblyReference.cache
+D:\work\sapient\MedTrackApi\MedTrack.BL\obj\Debug\netcoreapp3.1\MedTrack.BL.AssemblyInfoInputs.cache
+D:\work\sapient\MedTrackApi\MedTrack.BL\obj\Debug\netcoreapp3.1\MedTrack.BL.AssemblyInfo.cs
+D:\work\sapient\MedTrackApi\MedTrack.BL\obj\Debug\netcoreapp3.1\MedTrack.BL.csproj.CoreCompileInputs.cache
+D:\work\sapient\MedTrackApi\MedTrack.BL\obj\Debug\netcoreapp3.1\MedTrack.BL.dll
+D:\work\sapient\MedTrackApi\MedTrack.BL\obj\Debug\netcoreapp3.1\MedTrack.BL.pdb
+D:\work\sapient\MedTrackApi\MedTrack.BL\bin\Debug\netcoreapp3.1\Medtrack.DAL.dll
+D:\work\sapient\MedTrackApi\MedTrack.BL\bin\Debug\netcoreapp3.1\Medtrack.DAL.pdb
+D:\work\sapient\MedTrackApi\MedTrack.BL\obj\Debug\netcoreapp3.1\MedTrack.BL.csproj.CopyComplete
