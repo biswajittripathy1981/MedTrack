@@ -1,6 +1,6 @@
 using System;
 
-namespace MedTrackApi
+namespace MedTrack.BL
 {
     public class MedicineVM
     {

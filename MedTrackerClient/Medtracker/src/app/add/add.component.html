@@ -1,0 +1,10 @@
+<div>
+    <div><span>Name: </span><input [(ngModel)]="medicine.name"/></div>
+    <div><span>Brand: </span><input [(ngModel)]="medicine.brand"/></div>
+    <div><span>Price: </span><input [(ngModel)]="medicine.price"/></div>
+    <div><span>Quantity: </span><input [(ngModel)]="medicine.quantity"/></div>
+    <div><span>ExpiryDate: </span><input [(ngModel)]="medicine.expiryDate"/></div>
+    <div><span>Notes: </span><input [(ngModel)]="medicine.notes" placeholder="notes"/></div>
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+  </div>

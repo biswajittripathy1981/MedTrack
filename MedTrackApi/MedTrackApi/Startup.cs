@@ -19,6 +19,8 @@ namespace MedTrackApi
 {
     public class Startup
     {
+        private string MyAllowSpecificOrigins= "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -31,9 +33,19 @@ namespace MedTrackApi
         {
             services.AddControllers();
             services.AddDbContext<MedDbContext>(opt => opt.UseInMemoryDatabase(databaseName: "MedDB"));
-            services.AddScoped<MedDbContext>();
-            services.AddScoped<IMedicineRepository, MedicineRepository>();
-            services.AddScoped<IMedService, MedService>();
+            services.AddTransient<MedDbContext>();
+            services.AddTransient<IMedicineRepository, MedicineRepository>();
+            services.AddTransient<IMedService, MedService>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:4200")
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod(); 
+                                  });
+            });
             services.AddMvc();
             services.AddSwaggerGen();
         }
@@ -54,7 +66,7 @@ namespace MedTrackApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Medicine Api");
             });
             app.UseHttpsRedirection();
-
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseRouting();
 
             app.UseAuthorization();

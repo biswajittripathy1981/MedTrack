@@ -9,7 +9,7 @@ namespace MedTrack.BL
     {
         void Add(Medicine medicine);
         void Update(Medicine medicine);
-        IEnumerable<Medicine> GetAll();
+        IEnumerable<MedicineVM> GetAll();
         Medicine Get(int id);
     }
 }

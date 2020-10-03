@@ -1,0 +1,11 @@
+<div *ngIf="medicine">
+    <div><span>id: </span>{{medicine.id}}</div>
+    <div><span>Name: </span>{{medicine.name}}</div>
+    <div><span>Brand: </span>{{medicine.brand}}</div>
+    <div><span>Price: </span>{{medicine.price}}</div>
+    <div><span>Quantity: </span>{{medicine.quantity}}</div>
+    <div><span>ExpiryDate: </span>{{medicine.expiryDate}}</div>
+    <div><input [(ngModel)]="medicine.notes" placeholder="notes"/></div>
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+  </div>

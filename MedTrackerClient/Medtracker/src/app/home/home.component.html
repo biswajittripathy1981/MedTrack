@@ -1,0 +1,30 @@
+<h3>Stock</h3>
+<div> <a routerLink="/add">Add Medicine</a></div>
+<div>
+  <a  class="col-1-4"  *ngFor="let med of medicines"
+      routerLink="/edit/{{med.id}}">
+      <div class="grid-row" >
+            <span class="grid-col">
+            {{med.id}}
+            </span>
+            <span class="grid-col">
+                {{med.name}}
+            </span>
+            <span class="grid-col">
+                {{med.brand}}
+            </span>
+            <span class="grid-col">
+                {{med.price}}
+            </span>
+            <span class="grid-col" [ngStyle]="{'background-color': med.code == 1 ? 'yellow' : ''}">
+                {{med.quantity}}
+            </span>
+            <span class="grid-col" [ngStyle]="{'background-color': med.code == 2 ? 'red' : ''}">
+                {{med.expiryDate}}
+            </span>
+            <span class="grid-col">
+                {{med.notes}}
+            </span>
+    </div>
+  </a>
+</div>

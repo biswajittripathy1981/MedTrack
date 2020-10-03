@@ -25,48 +25,26 @@ namespace MedTrackApi.Controllers
         public IActionResult Post(Medicine medicine)
         {
             _medService.Add(medicine);
-            return Ok();
+            return Ok(true);
         }
 
         [HttpPut]
         public IActionResult Put(Medicine medicine)
         {
             _medService.Update(medicine);
-            return Ok();
+            return Ok(true);
         }
-        //[HttpGet]
-        //public Medicine GetById(int id)
-        //{
-        //    return _medService.Get(id);
-        //}
+        [HttpGet]
+        [Route("/medicine/{id}")]
+        public Medicine GetById(int id)
+        {
+            return _medService.Get(id);
+        }
         [HttpGet]
         public IEnumerable<MedicineVM> GetAll()
         {
-            var test =  _medService.GetAll().Select(item => new MedicineVM
-            {
-                Id = item.Id,
-                Brand = item.Brand,
-                Name = item.Name,
-                Notes = item.Notes,
-                Price = item.Price,
-                ExpiryDate = item.ExpiryDate,
-                Quantity = item.Quantity,
-                Code = GetColorCode(item)
-            })
-            .ToArray();
-            return test;
+            return _medService.GetAll();
         }
-        private ColorCode GetColorCode(Medicine med)
-        {
-            if((med.ExpiryDate - DateTime.Today).TotalDays < 30)
-            {
-                return ColorCode.Red;
-            }
-            if(med.Quantity < 10)
-            {
-                return ColorCode.Yellow;
-            }
-            return ColorCode.Default;
-        }
+        
     }
 }
