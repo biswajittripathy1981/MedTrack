@@ -10,13 +10,15 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NofoundComponent } from './nofound/nofound.component';
 @NgModule({
   declarations: [
     AppComponent,
     EditComponent,
     AddComponent,
     SearchComponent,
-    HomeComponent
+    HomeComponent,
+    NofoundComponent
   ],
   imports: [
     BrowserModule,
