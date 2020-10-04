@@ -4,7 +4,6 @@ export class Medicine{
     brand:string;
     price:number;
     quantity:number;
-    expiryDate:string;
+    expiryDate:Date;
     notes:string;
-    code:number;
 }

@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Medicine } from './medicine';
+import { MedicineVM } from './MedicineVM';
 
 
 @Injectable({ providedIn: 'root' })
@@ -14,10 +15,10 @@ export class MedService {
       };
     constructor(private http: HttpClient) { }
     
-    getMedicines(): Observable<Medicine[]> {
-        return this.http.get<Medicine[]>(this.url)
+    getMedicines(): Observable<MedicineVM[]> {
+        return this.http.get<MedicineVM[]>(this.url)
           .pipe(
-            catchError(this.handleError<Medicine[]>('GetMedicines', []))
+            catchError(this.handleError<MedicineVM[]>('GetMedicines', []))
           );
       }
 

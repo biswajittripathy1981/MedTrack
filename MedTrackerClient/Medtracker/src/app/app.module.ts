@@ -9,6 +9,7 @@ import { AddComponent } from './add/add.component';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

@@ -1,5 +1,6 @@
 <h3>Stock</h3>
-<div> <a routerLink="/add">Add Medicine</a></div>
+<div> <a routerLink="/add">Add Medicine</a></div> 
+<med-search (name)="onSearch($event)"></med-search>
 <div>
   <a  class="col-1-4"  *ngFor="let med of medicines"
       routerLink="/edit/{{med.id}}">
